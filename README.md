@@ -4,30 +4,16 @@
 Identificamos como problemática en la empresa, Cheffy, que no se tenía un panel que permitiera administrar todas las áreas de manera homologada. Para solucionar esta problematica, decidimos crear un sistema en linea de administracion de las necesidades de los afiliados. Para la arquitectura del sistema se utilizo Vue y FireBase que es una base de datos "ServerLess".
 
 2. Requerimientos
-Proceso de instalacion
-Instalar Node y NPM
-https://nodejs.org/es/download/
+https://github.com/PaulAguirre98/Evidencia-productividad/wiki/Requerimientos
 
 3. Instalacion
-Instalar dependencias y requerimientos del proyecto
-`npm install`
-
-Correr ambiente de desarrollo
-`npm run serve`
-
-Compilar para subir a produccion
-`npm run build`
-
-Subir a la nube de Firebase Hosting
-`firebase deploy --only hosting`
-
+https://github.com/PaulAguirre98/Evidencia-productividad/wiki/Instalaci%C3%B3n
 
 4. Configuracion
-*Copiar el archivo .env.example y cambiarle el nombre a .env
-*Cambiar las variables de configuracion en el archivo .env
+https://github.com/PaulAguirre98/Evidencia-productividad/wiki/Configuraci%C3%B3n
 
 6. Contribucion
-Guia de configuracion en archivo CONTRIBUTING.md
-https://gist.github.com/briandk/3d2e8b3ec8daf5a27a62
+https://github.com/PaulAguirre98/Evidencia-productividad/wiki/Contribuci%C3%B3n
 
 7. Roadmap
+https://github.com/PaulAguirre98/Evidencia-productividad/wiki/Roadmap
