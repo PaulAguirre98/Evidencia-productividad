@@ -1,0 +1,22 @@
+/* Import styles */
+@import './base/variables';
+@import '../sass/base/layout';
+@import '../sass/base/typography';
+@import '../sass/base/animations';
+@import '../sass/base/tables';
+@import '../sass/base/media.queries';
+@import '../sass/base/loader';
+@import '../sass/base/mixins';
+@import '../sass/components/badges';
+@import '../sass/components/breadcrumb';
+@import '../sass/components/buttons';
+@import '../sass/components/cards';
+@import '../sass/components/carousel';
+@import '../sass/components/navbars';
+@import '../sass/components/footers';
+@import '../sass/components/lists';
+@import '../sass/components/forms';
+@import '../sass/components/modals';
+@import '../sass/components/sections';
+@import '../sass/components/paginations';
+@import '../sass/components/progress';

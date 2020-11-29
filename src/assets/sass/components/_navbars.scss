@@ -1,0 +1,180 @@
+/* ---------------------------------------------------
+    NAVBAR
+----------------------------------------------------- */
+.navbar {
+  background-color: var(--theme-background) !important;
+  font-weight: 500;
+  font-size: 14px;
+  transition: $transition-cubic-bezier;
+  box-shadow: $shadow-2dp;
+  z-index: 999;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: var(--theme-on-primary);
+  font-family: $font-poppins;
+  font-size: 14px;
+  text-transform: uppercase !important;
+}
+
+.navbar .navbar-brand {
+  color: var(--theme-primary);
+  font-family: $font-poppins;
+  font-weight: bold;
+
+  &:hover {
+    color: var(--theme-primary-hover);
+  }
+
+  &:focus,
+  &:active {
+    color: var(--theme-primary-active);
+  }
+}
+
+.navbar a {
+  color: var(--theme-on-primary);
+
+  &:hover {
+    // background-color: #bebebe1c;
+    border-radius: $border-radius-25;
+  }
+
+  &:focus,
+  &:active {
+    color: var(--theme-primary) !important;
+  }
+}
+
+.navbar-logo {
+  filter: var(--theme-img-logo);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--theme-on-primary);
+
+  &:hover {
+    color: var(--theme-primary);
+  }
+}
+
+.navbar a.nav-link.router-link-exact-active {
+  color: var(--theme-primary);
+}
+
+.navbar-light .navbar-toggler {
+  color: var(--theme-on-primary);
+  border-color: var(--theme-surface-card-outline);
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: var(--theme-primary);
+}
+
+/* ---------------------------------------------------
+    DROPDOWNS
+----------------------------------------------------- */
+.dropdown-menu {
+  background-color: var(--theme-surface-bottom);
+  border: none;
+  box-shadow: $shadow-8dp;
+  border-radius: $border-radius-8;
+  animation-name: slideIn;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-animation-duration: calc(var(--animate-duration) / 2);
+  animation-duration: calc(var(--animate-duration) / 2);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.dropdown-divider {
+  border-top: 1px solid var(--theme-surface-1dp);
+}
+
+.dropdown-item {
+  font-weight: 500;
+  color: var(--theme-on-primary) !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.dropdown-item:hover {
+  background-color: var(--theme-primary);
+  color: var(--theme-on-primary-inverse) !important;
+  border-radius: $border-radius-4 !important;
+}
+
+.dropdown-item:active,
+.dropdown-item:focus {
+  background-color: var(--theme-surface);
+  color: var(--theme-on-primary) !important;
+}
+
+/* ---------------------------------------------------
+    NAVIGATION MENU
+----------------------------------------------------- */
+.nav-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% - 1px - 13px);
+  left: 20%;
+  width: 900px;
+  height: 500px;
+  padding: 10px;
+  margin: 10px;
+  z-index: 1;
+  background-color: var(--theme-surface);
+  color: var(--theme-on-primary);
+  box-shadow: $shadow-12dp;
+  border-radius: $border-radius-8;
+  overflow-y: hidden;
+  animation-name: slideIn;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-animation-duration: calc(var(--animate-duration) / 2);
+  animation-duration: calc(var(--animate-duration) / 2);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  .nav-menu-header {
+    padding: 15px;
+  }
+
+  .nav-menu-body {
+    padding: 15px;
+  }
+
+  .nav-menu-footer {
+    padding: 15px;
+  }
+}
+
+/* ---------------------------------------------------
+    NAV TABS
+----------------------------------------------------- */
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: var(--theme-primary);
+  font-weight: bold;
+  background-color: var(--theme-background);
+  border-color: var(--theme-background);
+  border-bottom: 2px solid var(--theme-primary);
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-color: var(--theme-background);
+  border-bottom: 2px solid var(--theme-primary);
+}
+
+/* ---------------------------------------------------
+    NAV PILLS
+----------------------------------------------------- */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: var(--theme-primary);
+  font-weight: bold;
+  background-color: var(--theme-surface);
+  border-radius: $border-radius-4;
+  border-left: 3px solid var(--theme-primary);
+}

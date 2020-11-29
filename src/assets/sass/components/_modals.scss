@@ -1,0 +1,22 @@
+.modal {
+  .modal-header {
+    background: var(--theme-background);
+    border-bottom: 1px solid var(--theme-surface-1dp);
+    border-top-left-radius: $border-radius-25;
+    border-top-right-radius: $border-radius-25;
+  }
+
+  .modal-content {
+    background-color: var(--theme-surface-1dp);
+    border-radius: $border-radius-25;
+    box-shadow: $shadow-12dp;
+    border: var(--theme-surface-1dp);
+  }
+
+  .modal-footer {
+    background: var(--theme-background);
+    border-top: 1px solid var(--theme-surface-1dp) !important;
+    border-bottom-left-radius: $border-radius-25;
+    border-bottom-right-radius: $border-radius-25;
+  }
+}

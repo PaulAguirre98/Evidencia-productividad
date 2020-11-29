@@ -1,0 +1,6 @@
+.page-item.active .page-link {
+  z-index: 3;
+  color: var(--theme-on-primary-inverse);
+  background-color: var(--theme-primary);
+  border-color: var(--theme-primary);
+}

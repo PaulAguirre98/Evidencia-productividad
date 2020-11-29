@@ -1,0 +1,246 @@
+/* ---------------------------------------------------
+    GENERAL STYLES
+----------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-roboto;
+  color: $black;
+  background-color: var(--theme-background) !important;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* ---------------------------------------------------
+    COLORS
+----------------------------------------------------- */
+.bg-primary {
+  background-color: var(--theme-primary) !important;
+  color: var(--theme-on-primary-inverse) !important;
+}
+
+.bg-primary-light {
+  background-color: var(--theme-primary-light) !important;
+  color: var(--theme-on-primary-inverse) !important;
+}
+
+.bg-primary-lighten {
+  background-color: lighten($primary, 50%) !important;
+}
+
+.bg-secondary {
+  background-color: var(--theme-secondary) !important;
+  color: var(--theme-on-primary) !important;
+}
+
+.bg-secondary-light {
+  background-color: var(--theme-secondary-light) !important;
+  color: var(--theme-on-primary) !important;
+}
+
+.bg-secondary-lighten {
+  background-color: lighten($secondary, 10%) !important;
+}
+
+.bg-accent {
+  background-color: var(--theme-accent) !important;
+  color: var(--theme-on-primary) !important;
+}
+
+.bg-accent-light {
+  background-color: var(--theme-accent-light) !important;
+  color: var(--theme-on-primary) !important;
+}
+
+.bg-success {
+  background-color: var(--theme-success) !important;
+  color: var(--theme-on-primary-inverse) !important;
+}
+
+.bg-warning {
+  background-color: var(--theme-warning) !important;
+  color: var(--theme-on-primary-inverse) !important;
+}
+
+.bg-danger {
+  background-color: var(--theme-danger) !important;
+  color: var(--theme-on-primary-inverse) !important;
+}
+
+.bg-grey {
+  background-color: var(--theme-surface) !important;
+  color: var(--theme-on-primary-inverse) !important;
+}
+
+.bg-grey-darken {
+  background-color: darken($grey, 10%) !important;
+}
+
+.bg-dark {
+  background-color: #212121 !important;
+  color: $white !important;
+}
+
+.bg-default {
+  background-color: $default !important;
+}
+
+.bg-surface {
+  background-color: var(--theme-surface) !important;
+  color: var(--theme-on-surface);
+}
+
+.bg-primary-gradient {
+  background: linear-gradient(to left, var(--theme-primary), var(--theme-primary-active));
+}
+
+.bg-secondary-gradient {
+  background: linear-gradient(to left, var(--theme-secondary), var(--theme-secondary-active));
+}
+
+.bg-dark-gradient {
+  background: linear-gradient(to left, #404040, #212121);
+}
+
+/* ---------------------------------------------------
+    BORDERS
+----------------------------------------------------- */
+.border-radius-4 {
+  border-radius: $border-radius-4 !important;
+}
+
+.border-radius-8 {
+  border-radius: $border-radius-8 !important;
+}
+
+.border-radius-12 {
+  border-radius: $border-radius-12 !important;
+}
+
+.border-radius-25 {
+  border-radius: $border-radius-25 !important;
+}
+
+.border-radius-50 {
+  border-radius: $border-radius-50 !important;
+}
+
+.border-success {
+  border: 5px solid var(--theme-success);
+}
+
+.border-danger {
+  border: 5px solid var(--theme-danger);
+}
+
+/* ---------------------------------------------------
+    SHADOWS
+----------------------------------------------------- */
+.shadow-0dp {
+  box-shadow: $shadow-0dp !important;
+}
+
+.shadow-1dp {
+  box-shadow: $shadow-1dp !important;
+}
+
+.shadow-2dp {
+  box-shadow: $shadow-2dp !important;
+}
+
+.shadow-3dp {
+  box-shadow: $shadow-3dp !important;
+}
+
+.shadow-4dp {
+  box-shadow: $shadow-4dp !important;
+}
+
+.shadow-5dp {
+  box-shadow: $shadow-5dp !important;
+}
+
+.shadow-6dp {
+  box-shadow: $shadow-6dp !important;
+}
+
+.shadow-7dp {
+  box-shadow: $shadow-7dp !important;
+}
+
+.shadow-8dp {
+  box-shadow: $shadow-8dp !important;
+}
+
+.shadow-9dp {
+  box-shadow: $shadow-9dp !important;
+}
+
+.shadow-10dp {
+  box-shadow: $shadow-10dp !important;
+}
+
+.shadow-11dp {
+  box-shadow: $shadow-11dp !important;
+}
+
+.shadow-12dp {
+  box-shadow: $shadow-12dp !important;
+}
+
+/* ---------------------------------------------------
+    ICONS
+----------------------------------------------------- */
+i.material-icons,
+i.material-icons-outlined {
+  vertical-align: middle;
+  display: inline-flex;
+}
+
+.icon-wrap {
+  padding: 12px;
+  background-color: transparentize($primary, 0.9);
+  color: var(--theme-primary-active);
+  border-radius: $border-radius-50;
+}
+
+/* ---------------------------------------------------
+    IMAGES
+----------------------------------------------------- */
+.img-fluid {
+  border-radius: $border-radius-4;
+}
+
+.img-shopping-cart {
+  width: 100px;
+}
+
+.img-logo {
+  filter: var(--theme-img-logo);
+}
+
+.img-instructions {
+  width: 260px;
+}
+
+/* ---------------------------------------------------
+    SIZES
+----------------------------------------------------- */
+.h-md-100 {
+  height: 85vh;
+}
+
+.h-vh-100 {
+  height: 100vh;
+}
+
+.h-100 {
+  height: 100vh !important;
+}
+
+.scrolling-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+}

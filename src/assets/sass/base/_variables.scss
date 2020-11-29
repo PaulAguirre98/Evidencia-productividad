@@ -1,0 +1,262 @@
+// Theme light
+:root {
+  --theme-background: #ffffff;
+  --theme-on-primary: #000000;
+  --theme-on-primary-inverse: #ffffff;
+  --theme-primary: #FF6160;
+  --theme-primary-hover: #f74946;
+  --theme-primary-active: #d73838;
+  --theme-on-secondary: #000000;
+  --theme-on-secondary-inverse: #ffffff;
+  --theme-secondary: #795548;
+  --theme-secondary-hover: #5d4037;
+  --theme-secondary-active: #3e2723;
+  --theme-muted: #6c757d;
+  --theme-accent: #B7E9FF;
+  --theme-accent-active: #1362a6;
+  --theme-success: #00c853;
+  --theme-warning: #ffab00;
+  --theme-danger: #de2839;
+  --theme-danger-hover: #cc1d33;
+  --theme-danger-active: #b00020;
+  --theme-blue: #1877f2;
+  --theme-disabled: #e9ecef;
+  --theme-footer: #0d253a;
+  --theme-surface: #F8F8F8;
+  --theme-surface-inverse: #272727;
+  --theme-surface-bottom: #f9f9f9;
+  --theme-surface-1dp: #ffffff;
+  --theme-surface-card-outline: #dadce0;
+  --theme-on-surface: #757575;
+  --theme-primary-light: #ffedf1;
+  --theme-secondary-light: #efebe9;
+  --theme-accent-light: #e3f7ff;
+  --theme-blue-light: #e7e9ff;
+  --theme-yellow-light: #fffde5;
+  --theme-green-light: #e3f7e7;
+  --theme-red-light: #ffebf0;
+  --theme-img-logo: none;
+}
+
+[theme="dark"] {
+  --theme-background: #121212;
+  --theme-on-primary: #ffffff;
+  --theme-on-primary-inverse: #000000;
+  --theme-primary: #ffd2d8;
+  --theme-primary-hover: #f8a2a4;
+  --theme-primary-active: #f27e81;
+  --theme-on-secondary: #000000;
+  --theme-on-secondary-inverse: #ffffff;
+  --theme-secondary: #d7ccc8;
+  --theme-secondary-hover: #bcaaa4;
+  --theme-secondary-active: #a1887f;
+  --theme-muted: #92989d;
+  --theme-accent: #B7E9FF;
+  --theme-success: #8fdf9e;
+  --theme-warning: #fef697;
+  --theme-danger: #fbcad2;
+  --theme-danger-hover: #ea959b;
+  --theme-danger-active: #de6c74;
+  --theme-disabled: #939393;
+  --theme-footer: #272727;
+  --theme-surface: #272727;
+  --theme-surface-inverse: #F8F8F8;
+  --theme-surface-bottom: #272727;
+  --theme-surface-1dp: #1e1e1e;
+  --theme-surface-card-outline: #323232;
+  --theme-on-surface: #bdbdbd;
+  --theme-primary-light: #e3f2fe;
+  --theme-secondary-light: #fce8e5;
+  --theme-accent-light: #e3f7ff;
+  --theme-blue-light: #e7e9ff;
+  --theme-yellow-light: #fffde5;
+  --theme-green-light: #e3f7e7;
+  --theme-red-light: #ffebf0;
+  --theme-img-logo: brightness(0) invert(1);
+}
+
+//  Basic colors
+$black: #000;
+$white: #fff;
+$grey: #757575;
+$primary: #FF6160;
+$secondary: #795548;
+$default: #f5f8fa;
+$success: #00c853;
+$danger: #de2839;
+
+$offset: 187;
+$duration: 1.4s;
+
+// Fonts
+$font-roboto: 'Roboto',
+sans-serif;
+$font-poppins: 'Poppins',
+sans-serif;
+
+// Type scale
+$mdc-typography-styles-headline1: (
+        font-family: unquote("Poppins"),
+        font-weight: lighter,
+        font-size: 93px,
+        letter-spacing: -1.5px,
+);
+
+$mdc-typography-styles-headline2: (
+        font-family: unquote("Poppins"),
+        font-weight: lighter,
+        font-size: 58px,
+        letter-spacing: -0.5px,
+);
+
+$mdc-typography-styles-headline3: (
+        font-family: unquote("Poppins"),
+        font-weight: normal,
+        font-size: 46px,
+        letter-spacing: 0px,
+);
+
+$mdc-typography-styles-headline4: (
+        font-family: unquote("Poppins"),
+        font-weight: normal,
+        font-size: 33px,
+        letter-spacing: 0.25px,
+);
+
+$mdc-typography-styles-headline5: (
+        font-family: unquote("Poppins"),
+        font-weight: normal,
+        font-size: 23px,
+        letter-spacing: 0px,
+);
+
+$mdc-typography-styles-headline6: (
+        font-family: unquote("Poppins"),
+        font-weight: medium,
+        font-size: 19px,
+        letter-spacing: 0.15px,
+);
+
+$mdc-typography-styles-subtitle1: (
+        font-family: unquote("Poppins"),
+        font-weight: normal,
+        font-size: 15px,
+        letter-spacing: 0.15px,
+);
+
+$mdc-typography-styles-subtitle2: (
+        font-family: unquote("Poppins"),
+        font-weight: medium,
+        font-size: 13px,
+        letter-spacing: 0.1px,
+);
+
+$mdc-typography-styles-body1: (
+        font-family: unquote("Roboto"),
+        font-weight: normal,
+        font-size: 16px,
+        letter-spacing: 0.5px,
+);
+
+$mdc-typography-styles-body2: (
+        font-family: unquote("Roboto"),
+        font-weight: normal,
+        font-size: 14px,
+        letter-spacing: 0.25px,
+);
+
+$mdc-typography-styles-button: (
+        font-family: unquote("Roboto"),
+        font-weight: bold,
+        font-size: 14px,
+        letter-spacing: 1.25px,
+);
+
+$mdc-typography-styles-caption: (
+        font-family: unquote("Roboto"),
+        font-weight: medium,
+        font-size: 10px,
+        letter-spacing: 0.4px,
+);
+
+$mdc-typography-styles-overline: (
+        font-family: unquote("Roboto"),
+        font-weight: normal,
+        font-size: 15px,
+        letter-spacing: 1.5px,
+);
+
+// Border radius
+$border-radius-0: 0px;
+$border-radius-4: 4px;
+$border-radius-8: 8px;
+$border-radius-12: 12px;
+$border-radius-25: 25px;
+$border-radius-50: 50px;
+
+// Transition
+$transition-cubic-bezier: all 0.3s cubic-bezier(.25, .8, .25, 1);
+
+// Elevations shadows
+$shadow-0dp: none;
+
+$shadow-1dp: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+
+$shadow-2dp: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+
+$shadow-3dp: 0px 1px 8px 0px rgba(0, 0, 0, 0.2),
+0px 3px 4px 0px rgba(0, 0, 0, 0.14),
+0px 3px 3px -2px rgba(0, 0, 0, 0.12);
+
+$shadow-4dp: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+
+$shadow-5dp: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+
+$shadow-6dp: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+
+$shadow-7dp: 0px 4px 5px -2px rgba(0, 0, 0, 0.2),
+0px 7px 10px 1px rgba(0, 0, 0, 0.14),
+0px 2px 16px 1px rgba(0, 0, 0, 0.12);
+
+$shadow-8dp: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+
+$shadow-9dp: 0px 5px 6px -3px rgba(0, 0, 0, 0.2),
+0px 9px 12px 1px rgba(0, 0, 0, 0.14),
+0px 3px 16px 2px rgba(0, 0, 0, 0.12);
+
+$shadow-10dp: 0px 6px 6px -3px rgba(0, 0, 0, 0.2),
+0px 10px 14px 1px rgba(0, 0, 0, 0.14),
+0px 4px 18px 3px rgba(0, 0, 0, 0.12);
+
+$shadow-11dp: 0px 6px 7px -4px rgba(0, 0, 0, 0.2),
+0px 11px 15px 1px rgba(0, 0, 0, 0.14),
+0px 4px 20px 3px rgba(0, 0, 0, 0.12);
+
+$shadow-12dp: 0px 7px 8px -4px rgba(0, 0, 0, 0.2),
+0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+
+// Forms
+$theme-text-field-filled: #f3f3f3;
+$theme-text-field-filled-hover: #eeeeee;
+$theme-text-field-filled-active: #d1d1d1;
+$theme-text-field-outlined: #bbbbbb;
+$theme-text-field-outlined-hover: #000000;
+
+$custom-file-text: (
+        en: "Browse",
+        es: "Elegir"
+);
+

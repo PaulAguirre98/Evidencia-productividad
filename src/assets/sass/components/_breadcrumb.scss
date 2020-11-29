@@ -1,0 +1,17 @@
+.breadcrumb {
+  background: var(--theme-background);
+  font-family: map-get($mdc-typography-styles-subtitle1, font-family);
+  font-weight: map-get($mdc-typography-styles-subtitle1, font-weight);
+  font-size: map-get($mdc-typography-styles-subtitle1, font-size);
+  letter-spacing: map-get($mdc-typography-styles-subtitle1, letter-spacing);
+
+  .breadcrumb-item.active {
+    color: var(--theme-on-primary);
+    font-weight: bold;
+  }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  color: #6c757d;
+  content: ">";
+}

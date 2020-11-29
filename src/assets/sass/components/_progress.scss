@@ -1,0 +1,10 @@
+.progress {
+  background-color: #eeeeee;
+}
+
+.progress-bar {
+  color: #fff;
+  background: linear-gradient(to left, var(--theme-secondary), var(--theme-secondary-active));
+  border-radius: $border-radius-25;
+  transition: width .6s ease;
+}

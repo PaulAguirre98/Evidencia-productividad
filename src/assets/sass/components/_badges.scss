@@ -1,0 +1,49 @@
+.badge {
+  font-family: $font-poppins;
+  border-radius: $border-radius-25;
+  padding: 8px;
+  margin: 4px;
+  font-size: 12px;
+  font-weight: 500;
+
+  &.badge-primary {
+    background-color: var(--theme-primary-light);
+    color: var(--theme-primary);
+  }
+
+  &.badge-secondary {
+    background-color: var(--theme-secondary-light);
+    color: var(--theme-secondary);
+  }
+
+  &.badge-success {
+    background-color: var(--theme-green-light);
+    color: #006a00;
+  }
+
+  &.badge-info {
+    background-color: var(--theme-blue-light);
+    color: #0000be;
+  }
+
+  &.badge-warning {
+    background-color: var(--theme-yellow-light);
+    color: #bc5800;
+  }
+
+  &.badge-danger {
+    background-color: var(--theme-red-light);
+    color: #c20d26;
+  }
+}
+
+.shopping-cart-items {
+  background-color: var(--theme-primary-active);
+  color: var(--theme-on-primary-inverse);
+  font-weight: bold;
+  border-radius: $border-radius-25;
+  text-align: center;
+  position: absolute;
+  width: 20px;
+  top: 40px;
+}

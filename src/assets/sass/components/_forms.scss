@@ -1,0 +1,223 @@
+.form-control {
+  background-color: var(--theme-surface);
+  color: var(--theme-on-primary);
+  border: 1px solid var(--theme-surface-card-outline);
+
+  &:hover {
+    background-color: var(--theme-surface);
+    color: var(--theme-on-primary);
+    border: 1px solid var(--theme-primary);
+  }
+
+  &:focus {
+    background-color: var(--theme-surface);
+    color: var(--theme-on-primary);
+    border: 1px solid var(--theme-primary-active);
+  }
+
+  &:disabled,
+  &[readonly] {
+    background-color: var(--theme-disabled) !important;
+    opacity: 0.5;
+  }
+}
+
+.form-control-flat {
+  background-color: var(--theme-surface);
+  color: var(--theme-on-primary);
+  border: 1px solid var(--theme-surface);
+
+  &:focus {
+    background-color: var(--theme-surface);
+    color: var(--theme-on-primary);
+    border: 1px solid var(--theme-surface);
+  }
+
+  &:disabled,
+  &[readonly] {
+    background-color: var(--theme-disabled) !important;
+    opacity: 0.5;
+  }
+}
+
+.form-control-outline {
+  background-color: transparent;
+  color: var(--theme-on-primary-inverse);
+  border: 1px solid transparent;
+  border-bottom: 1px solid var(--theme-surface);
+
+  &:hover {
+    background-color: transparent;
+    color: var(--theme-on-primary-inverse);
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--theme-surface);
+  }
+
+  &:focus {
+    background-color: transparent;
+    color: var(--theme-on-primary);
+    border: 1px solid var(--theme-surface);
+    border-bottom: 1px solid var(--theme-surface);
+  }
+
+  &:disabled,
+  &[readonly] {
+    background-color: var(--theme-disabled) !important;
+    opacity: 0.5;
+  }
+
+  &::placeholder {
+    color: var(--theme-surface);
+  }
+
+  &::-webkit-input-placeholder {
+    color: var(--theme-surface);
+  }
+
+  &::-moz-placeholder {
+    color: var(--theme-surface);
+  }
+
+  &::-ms-input-placeholder {
+    color: var(--theme-surface);
+  }
+}
+
+.custom-file-input ~ .custom-file-label::after {
+  content: "Elegir";
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label {
+  color: var(--theme-secondary);
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: var(--theme-on-secondary);
+  border-color: var(--theme-secondary);
+  background-color: var(--theme-secondary);
+}
+
+.custom-control-input ~ .custom-control-label::after {
+  margin-top: 5px;
+}
+
+.custom-control-input ~ .custom-control-label::before {
+  margin-top: 5px;
+}
+
+.custom-file-label {
+  background-color: var(--theme-surface);
+  color: var(--theme-on-primary);
+  border: 1px solid var(--theme-surface-card-outline);
+
+  &:hover {
+    background-color: var(--theme-surface);
+    color: var(--theme-on-primary);
+    border: 1px solid var(--theme-primary);
+  }
+
+  &:focus {
+    background-color: var(--theme-surface);
+    color: var(--theme-on-primary);
+    border: 1px solid var(--theme-primary-active);
+  }
+
+  &:disabled,
+  &[readonly] {
+    background-color: var(--theme-disabled) !important;
+    opacity: 0.5;
+  }
+}
+
+/* CUSTOM CSS SWITCH */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 14px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #b3b3b3;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 0px;
+  bottom: -2px;
+  background-color: #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+input:checked + .slider {
+  background-color: var(--theme-secondary-light);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--theme-secondary);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+  background-color: var(--theme-secondary-active);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Datepicker */
+.theme-datepicker .vdatetime-popup__header,
+.theme-datepicker .vdatetime-calendar__month__day--selected > span > span,
+.theme-datepicker .vdatetime-calendar__month__day--selected:hover > span > span {
+  background: var(--theme-secondary);
+  border-top-left-radius: $border-radius-25;
+  border-top-right-radius: $border-radius-25;
+}
+
+.theme-datepicker .vdatetime-year-picker__item--selected,
+.theme-datepicker .vdatetime-time-picker__item--selected,
+.theme-datepicker .vdatetime-popup__actions__button {
+  color: var(--theme-primary);
+}
+
+.vdatetime-popup {
+  border-radius: $border-radius-25;
+}
+
+.vue-swatches__fallback__input {
+  height: 35px;
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+  color: #35495e;
+  background: #fff;
+}

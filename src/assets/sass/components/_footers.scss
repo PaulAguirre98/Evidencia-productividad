@@ -1,0 +1,13 @@
+.footer {
+    background-color: var(--theme-footer);
+    padding-top: 30px;
+    height: 100px;
+}
+
+.footer h6 {
+    color: var(--theme-on-primary-inverse);
+}
+
+.wrapper {
+    min-height: calc(100vh - 100px);
+}

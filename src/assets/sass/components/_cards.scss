@@ -1,0 +1,130 @@
+/* ---------------------------------------------------
+    CARD
+----------------------------------------------------- */
+.card {
+  background-color: var(--theme-surface-1dp);
+  color: var(--theme-on-primary);
+  border-radius: $border-radius-12;
+  border: none;
+  /* 1dp */
+  box-shadow: $shadow-2dp;
+  transition: $transition-cubic-bezier;
+
+  &:hover {
+    /* 2dp */
+    box-shadow: $shadow-4dp;
+  }
+
+}
+
+.card-header {
+  background-color: var(--theme-surface-1dp);
+  border-bottom: 1px solid transparent;
+}
+
+.card-header:first-child {
+  border-top-left-radius: $border-radius-12;
+  border-top-right-radius: $border-radius-12;
+}
+
+.card-footer {
+  padding: .75rem 1.25rem;
+  background-color: var(--theme-surface-1dp);
+  border-top: 1px solid rgba(0, 0, 0, .125);
+}
+
+.card-footer:last-child {
+  border-bottom-left-radius: $border-radius-12;
+  border-bottom-right-radius: $border-radius-12;
+}
+
+.card-img, .card-img-top {
+  border-top-left-radius: $border-radius-12;
+  border-top-right-radius: $border-radius-12;
+}
+
+.card-square {
+  border-radius: 0px;
+}
+
+.card-round {
+  border-radius: 50px;
+}
+
+.card-overflow {
+  top: -75px;
+}
+
+.card-no-border {
+  box-shadow: none !important;
+  border: none;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.card-outline {
+  box-shadow: none !important;
+  border: 1px solid var(--theme-surface-card-outline);
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.card-static-elevation {
+  /* 1dp */
+  box-shadow: $shadow-1dp;
+
+  &:hover {
+    /* 1dp */
+    box-shadow: $shadow-1dp;
+  }
+
+}
+
+.card-simple-elevation {
+  /* 1dp */
+  box-shadow: $shadow-0dp;
+
+  &:hover {
+    /* 1dp */
+    box-shadow: $shadow-2dp;
+  }
+
+}
+
+.card-scale {
+  background-color: var(--theme-background);
+
+  &:hover {
+    background-color: var(--theme-surface-1dp);
+    transform: translateY(5px);
+    z-index: 100;
+    box-shadow: $shadow-4dp;
+  }
+}
+
+.card-nav-items {
+  background-color: var(--theme-surface);
+  box-shadow: $shadow-0dp !important;
+  border-radius: $border-radius-0;
+  transition: $transition-cubic-bezier;
+
+  .icon-wrap {
+    background-color: transparentize($black, 0.9);
+    color: var(--theme-on-primary);
+  }
+
+  &:hover h6 {
+    color: var(--theme-primary);
+    transition: $transition-cubic-bezier;
+  }
+
+  &:hover .icon-wrap {
+    background-color: transparentize($primary, 0.9);
+    color: var(--theme-primary-active);
+    transition: $transition-cubic-bezier;
+  }
+}
