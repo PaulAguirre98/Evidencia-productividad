@@ -13,7 +13,7 @@ https://github.com/PaulAguirre98/Evidencia-productividad/wiki/Instalaci%C3%B3n
 https://github.com/PaulAguirre98/Evidencia-productividad/wiki/Configuraci%C3%B3n
 
 5. Uso
-
+https://github.com/PaulAguirre98/Evidencia-productividad/wiki/Uso
 
 6. Contribucion
 https://github.com/PaulAguirre98/Evidencia-productividad/wiki/Contribuci%C3%B3n
